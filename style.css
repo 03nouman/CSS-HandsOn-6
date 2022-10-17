@@ -1,0 +1,151 @@
+body {
+  background-image: url(./Assests/shara\ desert.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* nav-bar */
+nav {
+  margin-top: 60px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: block;
+  height: 100px;
+  font-size: 25px;
+}
+
+.logo {
+  float: left;
+
+}
+
+#navigations {
+  float: right;
+  margin: 16px;
+}
+
+#menu {
+  float: right;
+
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+#navigations a {
+  text-decoration: none;
+  color: white;
+  margin: 32px;
+
+}
+
+/* main container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 120px;
+  color: white;
+
+}
+
+/* left-side */
+.left-container span {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.left-container p {
+  font-size: 30px;
+}
+
+#explore_btn {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 22px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px;
+
+}
+
+#explore_btn:hover {
+  cursor: pointer;
+}
+
+/* right-side */
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+#box-1 {
+  width: 400px;
+  height: 400px;
+  background-image: url(./Assests/pic-1.png);
+  background-size: cover;
+  margin: 8px;
+  border-radius: 16px;
+  font-size: 32px;
+  padding: 16px;
+}
+
+#box-2 {
+  width: 400px;
+  height: 400px;
+  background-image: url(./Assests/pic-2.png);
+  background-size: cover;
+  border-radius: 16px;
+  margin: 8px;
+  font-size: 32px;
+  padding: 16px;
+}
+
+#box-3 {
+  width: 400px;
+  height: 400px;
+  background-image: url(./Assests/pic-3.png);
+  background-size: cover;
+  margin: 8px;
+  border-radius: 16px;
+  font-size: 32px;
+  padding: 16px;
+}
+
+#box-4 {
+  width: 400px;
+  height: 400px;
+  background-image: url(./Assests/pic-4.png);
+  background-size: cover;
+  margin: 8px;
+  border-radius: 16px;
+  font-size: 32px;
+  padding: 16px;
+}
+
+.transition:hover {
+  transition: 1s;
+  transform: translateY(-10px);
+}
+
+@media only screen and (max-width:1024px) and (min-width:850px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+
+  #navigations {
+    float: none;
+  }
+
+  .right-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+
+}
