@@ -131,7 +131,34 @@ nav {
   transform: translateY(-10px);
 }
 
-@media only screen and (max-width:1024px) and (min-width:850px) {
+/* media-query for mobile */
+@media only screen and (min-width:360px) and (max-width:480px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .transition {
+    margin: 1rem;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  #navigations {
+    float: none;
+  }
+
+  .right-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+
+}
+
+/* Tablet-view */
+
+@media only screen and (max-width:1024px) and (min-width:481px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, auto);
