@@ -148,6 +148,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
+
   }
 
 }
